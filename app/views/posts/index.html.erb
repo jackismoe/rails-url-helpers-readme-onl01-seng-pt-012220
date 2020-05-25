@@ -1,0 +1,7 @@
+<!--<% @posts.each do |x| %>
+    <div><a href='<%= "/posts/#{x.id}" %>'><%= x.title %></a></div>
+<% end %>-->
+
+<% @posts.each do |x| %>
+    <div><%= link_to x.title, post_path(x) %></div>
+<% end %>
